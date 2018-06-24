@@ -99,8 +99,8 @@ method.check = function(candle) {
 
     if(this.trend.persisted && !this.trend.adviced) {
       this.trend.adviced = true;
-      this.stopLoss.create(3, currentPrice);
-      log.info('+++ Stoploss Created for 3% ', currentPrice);
+      this.stopLoss.create(2, currentPrice);
+      log.info('+++ Stoploss Created for 2% ', currentPrice);
       log.info(this.stopLoss.log());
       this.advice('long');
     } else
